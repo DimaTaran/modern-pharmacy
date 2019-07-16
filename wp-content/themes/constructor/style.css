@@ -39,7 +39,7 @@ hr {
 }
 h1,h2,h3,h4,h5,h6 {clear:both}
 h1 {font-size:2.0em; margin:12px 0}
-h2 {font-size:1.8em; margin:12px 0}
+h2 {font-size:1.4rem; margin:12px 0}
 h3 {font-size:1.6em; margin:8px  0}
 h4 {font-size:1.4em; margin:8px  0}
 h5 {font-size:1.2em; margin:6px  0}
@@ -1216,33 +1216,50 @@ article .entry img,
 .container .content {
     position: absolute; /* Position the background text */
     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: #4592a4; /* Fallback color */
-    opacity: 0.7; /* Black background with 0.5 opacity */
+    /*background: #4592a4; !* Fallback color *!  */
+    background: rgba(255, 255, 255, 0.75);
+    /*opacity: 0.7; !* Black background with 0.5 opacity *!*/
     /*z-index:1000;*/
     height: 40%;
-    color: #fff; /* Grey text */
     width: 90%; /* Full width */
     margin: auto;
     padding: 20px; /* Some padding */
 }
+
+article img:hover {
+    box-shadow: -10px -10px 25px lightgrey;
+}
 .container .content h3, .container .content p{
-    color: #fff; /* Grey text */
+    color: #000; /* Grey text */
     width: 100%; /* Full width */
 
 }
-.container .content h3:hover, .container .content p:hover{
-    color: #000;
-    width: 120%;
-    height: 110%;
-    /*font-size: 120%;*/
-}
-.content a:hover{
-    color: #000;
-    width: 120%;
-    font-size: 120%;
-    height: 110%;
+.container .content p:hover {
+    color: #303030;
+    /*width: 110%;*/
+    /*height: 120%;*/
+    overflow: hidden;
+    /*height: 100%;*/
+    font-size: 115%;
 }
 
-.home_column article:hover, home_left_column article:hover {
-    color: black;
+.container .content h3:hover {
+    color: #303030;
+    width: 110%;
+    /*font-size: 115%;*/
+
+    /*height: 110%;*/
+    /*font-size: 120%;*/
 }
+
+/*.container .content h3:hover, .container .content p:hover*/
+/*.content a:hover{*/
+/*    color: #000;*/
+/*    width: 120%;*/
+/*    font-size: 120%;*/
+/*    height: 110%;*/
+/*}*/
+
+/*.home_column article:hover, home_left_column article:hover {*/
+/*    color: black;*/
+/*}*/
